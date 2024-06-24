@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@id/editSex"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editSex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Sex"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editAge"
+            app:layout_constraintTop_toTopOf="@id/editAge"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editChestPainType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Chest Pain Type"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@id/editRestingBP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editAge"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editRestingBP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Resting BP"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editChestPainType"
+            app:layout_constraintTop_toBottomOf="@id/editSex"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editCholesterol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Cholesterol"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@id/editFastingBS"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editChestPainType"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editFastingBS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Fasting BS"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editCholesterol"
+            app:layout_constraintTop_toBottomOf="@id/editRestingBP"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editRestingECG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Resting ECG"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@id/editMaxHR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editCholesterol"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editMaxHR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Max HR"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editRestingECG"
+            app:layout_constraintTop_toBottomOf="@id/editFastingBS"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editExerciseAngina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Exercise Angina"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@id/editOldpeak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editRestingECG"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editOldpeak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Oldpeak"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editExerciseAngina"
+            app:layout_constraintTop_toBottomOf="@id/editMaxHR"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <EditText
+            android:id="@+id/editSTSlope"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ST Slope"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editOldpeak"
+            app:layout_constraintWidth_percent="1.0" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predict"
+            app:layout_constraintTop_toBottomOf="@id/editSTSlope"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btnCheck"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

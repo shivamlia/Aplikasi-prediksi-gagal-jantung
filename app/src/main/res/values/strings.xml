@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Heart Failure</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="nav_tentang_title">Tentang Aplikasi</string>
+    <string name="nav_dataset_title">Dataset</string>
+    <string name="nav_fitur_title">Fitur</string>
+    <string name="nav_model_title">Model</string>
+    <string name="nav_simulasimodel_title">Simulasi Model</string>
+    <string name="Deskripsi">Aplikasi Prediksi Gagal Jantung untuk memprediksi ciri-ciri
+        apa saja bisa mendeteksi gagal jantung</string>
+    <string name="desc_tentang">Deskripsi Aplikasi</string>
+    <string name="desc_tentang1">Aplikasi ini dirancang untuk membantu pengguna memahami risiko kesehatan mereka dan mengambil tindakan pencegahan yang tepat.
+        Tujuan dalam aplikasi ini yaitu Mengembangkan sebuah aplikasi Android yang menggunakan
+        model TensorFlow Lite untuk memprediksi risiko gagal jantung berdasarkan input pengguna. </string>
+    <string name="desc_tentang2">Adapun sumber dataset yang digunakan : mneggunakan dataset
+        yang terdapat di website Kaggle</string>
+    <string name="desc_tentang3">Cara Penggunaan Aplikasi Prediksi Gagal Jantung
+       Buka Aplikasi"Heart Failure Prediction". Masukkan Data Kesehatan yang tersedia dengan data kesehatan yang relevan.
+        Tekan Tombol "Predict" untuk memulai proses prediksi dan aplikasi akan menampilkan hasil prediksi di bagian bawah layar.</string>
+</resources>
